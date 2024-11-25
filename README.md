@@ -1,6 +1,10 @@
 # Angular Resizable Table Columns
 
-Gif
+
+
+https://github.com/user-attachments/assets/05d6ca70-f7b8-4d4a-97e1-c7f79c75c3fa
+
+
 
 ### 🎉 Sobre o projeto
 
