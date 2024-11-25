@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  padding: 1rem 10rem;
+}
+
+// Dynamic class and colors
+$colors: (
+  "transparent": transparent,
+  "white": "#FFFFFF",
+  "gray-200": "#f9f9ff",
+  "blue-100": "#F9F8FA",
+  "blue-200": "#E8EAEE",
+  "blue-300": "#44526A",
+  "blue-800": "#16283E",
+);
+
+@each $color, $value in $colors {
+  .t-bg-#{$color} {
+    background-color: $value;
+  }
+}
+
+@each $color, $value in $colors {
+  .t-color-#{$color} {
+    color: $value;
+  }
+}
+
+:root {
+  @each $color, $value in $colors {
+    --t-#{$color}: #{$value}; //  --t-green-tropical: #007f4e
+  }
+}
