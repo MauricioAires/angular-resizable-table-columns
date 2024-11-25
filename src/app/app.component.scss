@@ -1,0 +1,70 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  border: 1px solid var(--t-blue-200);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+table {
+  position: relative;
+  width: 100%;
+  background: var(--t-white);
+
+  border-collapse: collapse;
+  overflow: hidden;
+
+  // Remover comentário para que as colunas possam ocupar 100% da largura da tabela
+  // mais isso impossibilita de mover as colunas que ficaram fora da visão da tabela
+  table-layout: fixed;
+}
+
+thead {
+  background: var(--t-blue-100);
+
+  th {
+    padding: 10px;
+    color: var(--t-blue-800);
+    font-weight: 700;
+  }
+
+  th:first-child {
+    border-top-left-radius: 10px;
+  }
+
+  th:last-child {
+    border-top-right-radius: 10px;
+  }
+}
+
+td {
+  padding: 15px 10px;
+}
+
+tr:not(:last-child) {
+  border-bottom: 1px solid var(--t-blue-200);
+}
+
+td,
+th {
+  text-align: left;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
+  font-weight: 400;
+
+  color: var(--t-blue-300);
+
+  max-width: 50vh;
+  min-width: 50px;
+}
+
+tbody > tr:nth-child(odd) {
+  background: var(--t-white);
+}
