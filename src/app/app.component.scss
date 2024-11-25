@@ -1,3 +1,9 @@
+// :host ::ng-deep {
+//   .resizable-bar {
+//     background: red !important;
+//   }
+// }
+
 header {
   display: flex;
   justify-content: center;
@@ -21,6 +27,8 @@ table {
   // Remover comentário para que as colunas possam ocupar 100% da largura da tabela
   // mais isso impossibilita de mover as colunas que ficaram fora da visão da tabela
   table-layout: fixed;
+
+  // overflow: scroll;
 }
 
 thead {
