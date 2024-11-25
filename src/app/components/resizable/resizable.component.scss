@@ -1,0 +1,38 @@
+:host {
+  &:last-child .resizable-bar {
+    display: none;
+  }
+}
+
+.resizable-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.resizable-content {
+  flex: 1;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.resizable-bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+
+  justify-self: flex-end;
+
+  background: blueviolet;
+  background-clip: content-box;
+  cursor: ew-resize;
+  opacity: 0;
+  transition: opacity 0.3s;
+
+  &:hover,
+  &:active {
+    opacity: 1;
+  }
+}
